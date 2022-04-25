@@ -1,4 +1,10 @@
 {
-  "name": "Bigu",
-  "displayName": "Bigu"
+  "expo": {
+    "name": "Bigu",
+    "slug": "Bigu",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
 }
