@@ -7,6 +7,7 @@ import TelaInicial from './pages/TelaInicial/index';
 import Etapa1 from './pages/Etapa1Cadastro/index';
 import Etapa2 from './pages/Etapa2Cadastro/index';
 import Etapa3 from './pages/Etapa3Cadastro/index';
+import Map from './pages/MapView/index';
 
 // or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
@@ -16,7 +17,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Etapa1">
+      <Stack.Navigator initialRouteName="Map">
       
         <Stack.Screen 
           name="SplashScreenInitial" 
@@ -26,6 +27,10 @@ function App() {
         <Stack.Screen 
           name="TelaInicial" 
           component={TelaInicial} 
+          options={{ headerShown: false}}/>
+        <Stack.Screen 
+          name="Map" 
+          component={Map} 
           options={{ headerShown: false}}/>
         
         <Stack.Screen 
