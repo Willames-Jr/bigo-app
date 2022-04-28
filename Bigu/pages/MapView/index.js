@@ -5,7 +5,12 @@ import { StyleSheet, Text, View, Dimensions } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <MapView style={styles.map} />
+      <MapView style={styles.map} initialRegion={{
+      latitude:  -9.406106,
+      longitude: -36.633143,
+      latitudeDelta: 0.0922,
+      longitudeDelta: 0.0421,
+    }}/>
     </View>
   );
 }
